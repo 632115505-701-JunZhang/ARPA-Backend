@@ -15,9 +15,9 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public String LoginController(String email , String password) {
-    if(email==null || password==null) {
-        return "Invalid Email or Password";
+    public String LoginController(String phone , String password) {
+    if(phone==null || password==null) {
+        return "Invalid phone or Password";
     }
 
 
