@@ -1,10 +1,10 @@
 package project.Service;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import project.Entity.User;
 
-public interface UserService extends JpaRepository {
+public interface UserService {
 
 
+    public User getUserById(int id);
 
-    User getUser(int id);
 }
