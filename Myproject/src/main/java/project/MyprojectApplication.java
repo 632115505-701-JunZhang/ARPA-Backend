@@ -14,12 +14,12 @@ public class MyprojectApplication {
         SpringApplication.run(MyprojectApplication.class, args);
     }
 
-    @Bean
-    public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
-        return args -> {
-            Send sender = ctx.getBean(Send.class);
-            sender.testSimpleQueue();
-            sender.testDelayMessage("军哥好帅！",10000);
-        };
-    }
+//    @Bean
+//    public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
+//        return args -> {
+//            Send sender = ctx.getBean(Send.class);
+//            sender.testSimpleQueue();
+//            sender.testDelayMessage("军哥好帅！",10000);
+//        };
+//    }
 }

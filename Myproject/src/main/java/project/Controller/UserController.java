@@ -4,12 +4,12 @@ package project.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/User")
+@RestController
 public class UserController {
 
 
     @PostMapping("/register")
-    public String RegisterController() {
+    public String RegisterController(String phone , String password) {
         return "This is Register Controller";
 
     }
