@@ -1,4 +1,4 @@
-//package project;
+package project.RabbmitMQ;//package project;
 //
 //import org.springframework.amqp.core.Message;
 //import org.springframework.amqp.rabbit.core.RabbitTemplate;

@@ -1,4 +1,4 @@
-package project.Service;
+package project.Services;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,19 +13,14 @@ public class UserServiceImpl implements UserService {
    private UserServiceMapper userServiceMapper;
 
 
+
     @Override
-    public boolean addUser(User user) {
-
-
-
-        return false;
+    public boolean checkUser(User user) {
+        return userServiceMapper.findByEmail(user.getEmail()) != null;
     }
 
-
-
     @Override
-    public User getUserById(int id) {
-
-        return null;
+    public User saveUser(User user) {
+        return userServiceMapper.save(user);
     }
 }

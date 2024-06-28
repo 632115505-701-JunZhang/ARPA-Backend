@@ -7,4 +7,7 @@ import project.Entity.User;
 
 @Repository
 public interface UserServiceMapper extends JpaRepository<User, Long> {
+
+    User findByEmail(String email);
+
 }

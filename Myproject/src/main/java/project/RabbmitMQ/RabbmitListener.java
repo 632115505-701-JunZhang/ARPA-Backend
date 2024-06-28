@@ -1,4 +1,4 @@
-//package project;
+package project.RabbmitMQ;//package project;
 //
 //import org.springframework.amqp.rabbit.annotation.RabbitListener;
 //import org.springframework.stereotype.Component;
