@@ -16,14 +16,14 @@ public class User {
     @Column(name = "pwd")
     private String password;
 
-    //有参构造函数
-    public User(String email, String password) {
-        this.email = email;
-        this.password = password;
-    }
+//    //有参构造函数
+//    public User(String email, String password) {
+//        this.email = email;
+//        this.password = password;
+//    }
     //无参构造对象
-    public User() {
-    }
+//    public User() {
+//    }
 
     public long getId() {
         return id;
